@@ -1,1 +1,1 @@
-# FAMNet-Frequency-aware-Matching-Network-for-Cross-domain-Few-shot-Medical-Image-Segmentation
+# FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
