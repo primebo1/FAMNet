@@ -13,7 +13,7 @@ Combining these two modules, our FAMNet surpasses existing FSMIS models and Cros
 # Getting started
 
 ### Dependencies
-Please install following essential dependencies:
+Please install the following essential dependencies:
 ```
 dcm2nii
 json5==0.8.5
@@ -32,13 +32,13 @@ tqdm==4.62.3
 
 
 ### Date sets and Pre-processing
-Download:
+Please download:
 1) **Abdominal MRI**: [Combined Healthy Abdominal Organ Segmentation data set](https://chaos.grand-challenge.org/)
 2) **Abdominal CT**: [Multi-Atlas Abdomen Labeling Challenge](https://www.synapse.org/#!Synapse:syn3193805/wiki/218292)
 3) **Cardiac LGE and b-SSFP**: [Multi-sequence Cardiac MRI Segmentation data set](https://zmiclab.github.io/projects/mscmrseg19/)
 4) **Prostate UCLH and NCI**: [Cross-institution Male Pelvic Structures](https://zenodo.org/records/7013610)
 
-Pre-processing is performed according to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535) and we follow the procedure on their github repository.
+Pre-processing is performed according to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535) and we follow the procedure on their GitHub repository.
 
 
 ### Training
@@ -51,7 +51,7 @@ Pre-processing is performed according to [Ouyang et al.](https://github.com/chen
 Run `./script/test_<direction>.sh` 
 
 ### Acknowledgement
-Our code is based the works: [SSL-ALPNet](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation), [ADNet](https://github.com/sha168/ADNet) and [QNet](https://github.com/ZJLAB-AMMI/Q-Net)
+Our code is based on the works: [SSL-ALPNet](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation), [ADNet](https://github.com/sha168/ADNet) and [QNet](https://github.com/ZJLAB-AMMI/Q-Net)
 
 
 
