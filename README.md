@@ -1,5 +1,5 @@
 # FAMNet
-Official code for paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
+Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
 
 ![](./FAMNet.png)
 
