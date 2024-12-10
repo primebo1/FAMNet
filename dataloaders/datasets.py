@@ -28,14 +28,6 @@ class TestDataset(Dataset):
             self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'chaos_MR_T2_normalized/image*'))
         elif args['dataset'] == 'ABDOMEN_CT':
             self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'sabs_CT_normalized/image*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_flair':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'flair_normalized/image*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t1':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't1_normalized/image*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t1ce':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't1ce_normalized/image*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t2':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't2_normalized/image*'))
         elif args['dataset'] == 'Prostate_UCLH':
             self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'UCLH_normalized/image*'))
         elif args['dataset'] == 'Prostate_TCIA_PD':
@@ -158,18 +150,6 @@ class TrainDataset(Dataset):
         elif args['dataset'] == 'ABDOMEN_CT':
             self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'sabs_CT_normalized/image*'))
             self.label_dirs = glob.glob(os.path.join(args['data_dir'], 'sabs_CT_normalized/label*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_flair':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'flair_normalized/image*'))
-            self.label_dirs = glob.glob(os.path.join(args['data_dir'], 'flair_normalized/label*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t1':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't1_normalized/image*'))
-            self.label_dirs = glob.glob(os.path.join(args['data_dir'], 't1_normalized/label*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t1ce':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't1ce_normalized/image*'))
-            self.label_dirs = glob.glob(os.path.join(args['data_dir'], 't1ce_normalized/label*'))
-        elif args['dataset'] == 'BRAIN_TUMOR_MR_t2':
-            self.image_dirs = glob.glob(os.path.join(args['data_dir'], 't2_normalized/image*'))
-            self.label_dirs = glob.glob(os.path.join(args['data_dir'], 't2_normalized/label*'))
         elif args['dataset'] == 'Prostate_UCLH':
             self.image_dirs = glob.glob(os.path.join(args['data_dir'], 'UCLH_normalized/image*'))
             self.label_dirs = glob.glob(os.path.join(args['data_dir'], 'UCLH_normalized/label*'))
