@@ -40,36 +40,16 @@ def get_label_names(dataset):
         label_names[11] = 'PANCREAS'
         label_names[12] = 'RIGHT_ADRENAL_GLAND'  # right adrenal gland
         label_names[13] = 'LEFT_ADRENAL_GLAND'   # left adrenal gland
-    elif dataset == 'BRAIN_TUMOR_MR_flair':
-        label_names[0] = 'BG'
-        label_names[1] = 'NECROTIC_TUMOR_CORE'  # NCR
-        label_names[2] = 'PERITUMORAL_EDEMA'    # ED
-        label_names[4] = 'ENHANCING_TUMOR'      # ET
-    elif dataset == 'BRAIN_TUMOR_MR_t1':
-        label_names[0] = 'BG'
-        label_names[1] = 'NECROTIC_TUMOR_CORE'  # NCR
-        label_names[2] = 'PERITUMORAL_EDEMA'    # ED
-        label_names[4] = 'ENHANCING_TUMOR'      # ET
-    elif dataset == 'BRAIN_TUMOR_MR_t1ce':
-        label_names[0] = 'BG'
-        label_names[1] = 'NECROTIC_TUMOR_CORE'  # NCR
-        label_names[2] = 'PERITUMORAL_EDEMA'    # ED
-        label_names[4] = 'ENHANCING_TUMOR'      # ET
-    elif dataset == 'BRAIN_TUMOR_MR_t2':
-        label_names[0] = 'BG'
-        label_names[1] = 'NECROTIC_TUMOR_CORE'  # NCR
-        label_names[2] = 'PERITUMORAL_EDEMA'    # ED
-        label_names[4] = 'ENHANCING_TUMOR'      # ET
     elif dataset == 'Prostate_UCLH':
         label_names[0] = 'BG'
-        label_names[1] = 'Bladder'              # 膀胱               x
-        label_names[2] = 'Bone'                 # 骨骼cle            x
-        label_names[3] = 'Obturator_Internus'   # 闭孔肌             *
-        label_names[4] = 'Transition_Zone'      # 前列腺转换区        *
-        label_names[5] = 'Central_Gland'        # 前列腺中央腺体      *
-        label_names[6] = 'Rectum'               # 直肠
-        label_names[7] = 'Seminal_Vesicle'       # 精囊腺             x
-        label_names[8] = 'Neurovascular_Bundle'  # 神经血管束
+        label_names[1] = 'Bladder'              
+        label_names[2] = 'Bone'                 
+        label_names[3] = 'Obturator_Internus'   
+        label_names[4] = 'Transition_Zone'      
+        label_names[5] = 'Central_Gland'        
+        label_names[6] = 'Rectum'               
+        label_names[7] = 'Seminal_Vesicle'       
+        label_names[8] = 'Neurovascular_Bundle'  
     elif dataset == 'Prostate_TCIA_PD':
         label_names[0] = 'BG'
         label_names[1] = 'Bladder'
@@ -90,15 +70,6 @@ def get_label_names(dataset):
         label_names[6] = 'Rectum'
         label_names[7] = 'Seminal_Vesicle'
         label_names[8] = 'Neurovascular_Bundle'
-    elif dataset == 'MM_WHS':
-        label_names[0] = 'BG'
-        label_names[205] = 'MYO'
-        label_names[420] = 'LA'
-        label_names[500] = 'LV'
-        label_names[550] = 'RA'
-        label_names[600] = 'RV'
-        label_names[820] = 'aorta'
-        label_names[850] = 'PA'
         
     return label_names
 
@@ -137,38 +108,6 @@ def get_folds(dataset):
         FOLD[2] = set(range(8, 13))
         FOLD[3] = set(range(12, 17))
         FOLD[4] = set(range(16, 20))
-        FOLD[4].update([0])
-        return FOLD
-    elif dataset == 'BRAIN_TUMOR_MR_t1':
-        FOLD[0] = set(range(0, 10))
-        FOLD[1] = set(range(6, 16))
-        FOLD[2] = set(range(12, 22))
-        FOLD[3] = set(range(18, 28))
-        FOLD[4] = set(range(21, 31))
-        FOLD[4].update([0])
-        return FOLD
-    elif dataset == 'BRAIN_TUMOR_MR_t1ce':
-        FOLD[0] = set(range(31, 37))
-        FOLD[1] = set(range(36, 43))
-        FOLD[2] = set(range(42, 49))
-        FOLD[3] = set(range(48, 65))
-        FOLD[4] = set(range(64, 61))
-        FOLD[4].update([0])
-        return FOLD
-    elif dataset == 'BRAIN_TUMOR_MR_t2':
-        FOLD[0] = set(range(61, 67))
-        FOLD[1] = set(range(66, 73))
-        FOLD[2] = set(range(72, 79))
-        FOLD[3] = set(range(78, 95))
-        FOLD[4] = set(range(94, 91))
-        FOLD[4].update([0])
-        return FOLD
-    elif dataset == 'BRAIN_TUMOR_MR_flair':
-        FOLD[0] = set(range(91, 97))
-        FOLD[1] = set(range(96, 103))
-        FOLD[2] = set(range(102, 109))
-        FOLD[3] = set(range(108, 115))
-        FOLD[4] = set(range(114, 121))
         FOLD[4].update([0])
         return FOLD
     elif dataset == 'Prostate_UCLH':
