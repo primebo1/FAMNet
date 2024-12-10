@@ -1,3 +1,5 @@
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv)]()
+[![AAAI](https://img.shields.io/badge/AAAI25-paper-blue)]()
 # FAMNet
 Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
 
