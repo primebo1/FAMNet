@@ -65,6 +65,6 @@ Our code is based on the works: [SSL-ALPNet](https://github.com/cheng-01037/Self
 If you use this code for your research or project, please cite:
 ```
 
-}
+
 ```
 
