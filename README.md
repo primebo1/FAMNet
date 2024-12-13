@@ -10,13 +10,13 @@ Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for 
 ![](./FAMNet.png)
 
 
-#### Abstract
+## Abstract
 Existing few-shot medical image segmentation (FSMIS) models fail to address a practical issue in medical imaging: the domain shift caused by different imaging techniques, which limits the applicability to current FSMIS tasks. To overcome this limitation, we focus on the cross-domain few-shot medical image segmentation (CD-FSMIS) task, aiming to develop a generalized model capable of adapting to a broader range of medical image segmentation scenarios with limited labeled data from the novel target domain.
 Inspired by the characteristics of frequency domain similarity across different domains, we propose a Frequency-aware Matching Network (FAMNet), which includes two key components: a Frequency-aware Matching (FAM) module and a Multi-Spectral Fusion (MSF) module. The FAM module tackles two problems during the meta-learning phase: 1) intra-domain variance caused by the inherent support-query bias, due to the different appearances of organs and lesions, and 2) inter-domain variance caused by different medical imaging techniques. Additionally, we design an MSF module to integrate the different frequency features decoupled by the FAM module, and further mitigate the impact of inter-domain variance on the model's segmentation performance.
 Combining these two modules, our FAMNet surpasses existing FSMIS models and Cross-domain Few-shot Semantic Segmentation models on three cross-domain datasets, achieving state-of-the-art performance in the CD-FSMIS task.
 
 
-# Getting started
+## Getting started
 
 ### Dependencies
 Please install the following essential dependencies:
@@ -57,11 +57,11 @@ Pre-processing is performed according to [Ouyang et al.](https://github.com/chen
 Run `./script/test_<direction>.sh` 
 
 
-# Acknowledgement
+## Acknowledgement
 Our code is based on the works: [SSL-ALPNet](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation), [ADNet](https://github.com/sha168/ADNet) and [QNet](https://github.com/ZJLAB-AMMI/Q-Net)
 
 
-# Citation
+## Citation
 If you use this code for your research or project, please cite:
 ```
 @misc{bo2024famnetfrequencyawarematchingnetwork,
