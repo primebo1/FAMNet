@@ -86,14 +86,8 @@ def cfg():
         'ABDOMEN_CT': {'data_dir': './data/ABD/ABDOMEN_CT'},
         'CARDIAC_bssFP': {'data_dir': './data/Cardiac/bSSFP'},
         'CARDIAC_LGE': {'data_dir': './data/Cardiac/LGE'},
-        'BRAIN_TUMOR_MR_t1': {'data_dir': './data/BraTS/T1'},
-        'BRAIN_TUMOR_MR_t1ce': {'data_dir': './data/BraTS/T1ce'},
-        'BRAIN_TUMOR_MR_t2': {'data_dir': './data/BraTS/T2'},
-        'BRAIN_TUMOR_MR_flair': {'data_dir': './data/BraTS/Flair'},
         'Prostate_UCLH': {'data_dir': './data/Prostate/UCLH'},
-        'Prostate_Picture': {'data_dir': './data/Prostate/PICTURE'},
         'Prostate_NCI': {'data_dir': './data/Prostate/NCI'},
-        'Prostate_TCIA_PD': {'data_dir': './data/Prostate/TCIA_PD'}
     }
 
     # Settings of clip
