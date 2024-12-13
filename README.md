@@ -73,6 +73,5 @@ If you use this code for your research or project, please cite:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2412.09319}, 
 }
-
 ```
 
