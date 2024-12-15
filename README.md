@@ -64,14 +64,11 @@ Our code is based on the works: [SSL-ALPNet](https://github.com/cheng-01037/Self
 ## Citation
 If you use this code for your research or project, please cite:
 ```
-@misc{bo2024famnetfrequencyawarematchingnetwork,
-      title={FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation}, 
-      author={Yuntian Bo and Yazhou Zhu and Lunbo Li and Haofeng Zhang},
-      year={2024},
-      eprint={2412.09319},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.09319}, 
+@article{bo2024famnet,
+  title={FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation},
+  author={Bo, Yuntian and Zhu, Yazhou and Li, Lunbo and Zhang, Haofeng},
+  journal={arXiv preprint arXiv:2412.09319},
+  year={2024}
 }
 ```
 
