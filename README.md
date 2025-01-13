@@ -1,6 +1,6 @@
 # FAMNet
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2412.09319)
-[![AAAI](https://img.shields.io/badge/AAAI25-paper-blue)]()
+[![AAAI](https://img.shields.io/badge/AAAI25-Paper-blue)]()
 
 Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
 
@@ -37,7 +37,7 @@ tqdm==4.62.3
 ```
 
 
-### Date sets and Pre-processing
+### Datesets and Preprocessing
 Please download:
 1) **Abdominal MRI**: [Combined Healthy Abdominal Organ Segmentation dataset](https://chaos.grand-challenge.org/)
 2) **Abdominal CT**: [Multi-Atlas Abdomen Labeling Challenge](https://www.synapse.org/#!Synapse:syn3193805/wiki/218292)
