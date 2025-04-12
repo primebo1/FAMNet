@@ -1,6 +1,6 @@
 # FAMNet
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2412.09319)
-[![AAAI](https://img.shields.io/badge/AAAI25-Paper-blue)]()
+[![AAAI](https://img.shields.io/badge/AAAI-25-Paper-blue)](https://ojs.aaai.org/index.php/AAAI/article/view/32184)
 
 Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
 
@@ -64,11 +64,6 @@ Our code is built upon the works of [SSL-ALPNet](https://github.com/cheng-01037/
 ## 📝 Citation
 If you use this code for your research or project, please consider citing our paper. Thanks!🥂:
 ```
-@article{bo2024famnet,
-  title={FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation},
-  author={Bo, Yuntian and Zhu, Yazhou and Li, Lunbo and Zhang, Haofeng},
-  journal={arXiv preprint arXiv:2412.09319},
-  year={2024}
-}
+@inproceedings{Bo_Zhu_Li_Zhang_2025, title={FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation}, volume={39}, url={https://ojs.aaai.org/index.php/AAAI/article/view/32184}, DOI={10.1609/aaai.v39i2.32184}, number={2}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Bo, Yuntian and Zhu, Yazhou and Li, Lunbo and Zhang, Haofeng}, year={2025}, month={Apr.}, pages={1889-1897} }
 ```
 
