@@ -6,7 +6,7 @@ Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for 
 
 - [**News!**] 24-12-10: Our work is accepted by AAAI25. [Arxiv Paper](https://arxiv.org/abs/2412.09319) can be found here. 🎉
 
-  
+## 💡 Overview of FAMNet 
 ![](./FAMNet.png)
 
 
@@ -46,14 +46,25 @@ Please download:
 
 Pre-processing is performed according to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535) and we follow the procedure on their GitHub repository.
 
+### 📦 Pretrained Weights
+1. *(Optional)* You can download our [pretrained models](https://drive.google.com/drive/folders/1ER-dAD34UPpTP6ZHfQ4tmGZYV1iB-rF0?usp=sharing) for different domains:
+
+   * **Abdominal CT**: [Google Drive](https://drive.google.com/drive/folders/1vzSSeUVgyOL2WBVSxp35X-WQUOZQ4Kcy?usp=sharing)
+   * **Abdominal MRI**: [Google Drive](https://drive.google.com/drive/folders/1-8s2RGthA8iHsrVA2RnYpq3AdIx409Rm?usp=sharing)
+   * **Cardiac LGE**: [Google Drive](https://drive.google.com/drive/folders/1xLc0wDQMorLHLehPe_dnV_lxHaFkLqz3?usp=sharing)
+   * **Cardiac b-SSFP**: [Google Drive](https://drive.google.com/drive/folders/1xev_e6WU0trRXsexWwOxF9eBtDf19paB?usp=sharing)
+    * **Prostate UCLH**: [Google Drive](https://drive.google.com/drive/folders/1XmaiZkyIATJdaQ2gqv-SGqTXI_e4A4P0?usp=sharing)
+    * **Prostate NCI**: [Google Drive](https://drive.google.com/drive/folders/1VJI5_eBc7KmY4CinChJ0zgPDBncS6f1Z?usp=sharing)
+
+   After downloading, update the path accordingly in the test script.
 
 ### 🔥 Training
 1. Compile `./data/supervoxels/felzenszwalb_3d_cy.pyx` with cython (`python ./data/supervoxels/setup.py build_ext --inplace`) and run `./data/supervoxels/generate_supervoxels.py`
-2. Download pre-trained ResNet-50 weights [vanilla version](https://download.pytorch.org/models/fcn_resnet50_coco-1167a1af.pth) or [deeplabv3 version](https://download.pytorch.org/models/deeplabv3_resnet50_coco-cd0a2569.pth) and put your checkpoints folder, then replace the absolute path in the code `./models/encoder.py`.  
+2. Download the pre-trained [ResNet-50 weights](https://download.pytorch.org/models/deeplabv3_resnet50_coco-cd0a2569.pth) and put in your checkpoints folder, then replace the absolute path in the code `./models/encoder.py`.  
 3. Run `./script/train_<direction>.sh`, for example: `./script/train_ct2mr.sh`
 
 
-### 🙏  Inference
+### 🔍  Inference
 Run `./script/test_<direction>.sh` 
 
 
@@ -63,7 +74,7 @@ Our code is built upon the works of [SSL-ALPNet](https://github.com/cheng-01037/
 
 ## 📝 Citation
 If you use this code for your research or project, please consider citing our paper. Thanks!🥂:
-```
+```bibtex
 @inproceedings{bo2025famnet,
   title={FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation},
   author={Bo, Yuntian and Zhu, Yazhou and Li, Lunbo and Zhang, Haofeng},
