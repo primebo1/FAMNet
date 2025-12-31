@@ -5,7 +5,7 @@
 Official code for AAAI 2025 paper: FAMNet: Frequency-aware Matching Network for Cross-domain Few-shot Medical Image Segmentation
 
 - [**News!**] 24-12-10: Our work is accepted by AAAI25. [Arxiv Paper](https://arxiv.org/abs/2412.09319) can be found here. 🎉
-- [**News!**] 25-12-31: Check out our [latest CD-FSMIS paper](https://ieeexplore.ieee.org/document/11318044) accepted by IEEE T-MI!
+- [**News!**] 25-12-31: Check out our [latest CD-FSMIS paper](https://github.com/primebo1/C-Graph) accepted by IEEE T-MI!
 
 
 ## 💡 Overview of FAMNet 
